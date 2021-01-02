@@ -1,0 +1,210 @@
+:root {
+  --primary-text-color: rgba(33, 33, 33, 1);
+  --hover-text-color: rgba(33, 150, 243, 1);
+  --light-text-color: rgba(255, 255, 255, 1);
+  --light-footer-text-color: rgba(255, 255, 255, 0.6);
+  --grey-text-color: rgba(117, 117, 117, 1);
+  --primary-background-color: rgba(47, 48, 58, 1);
+  --secondry-background-color: rgba(245, 244, 250, 1);
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--light-text-color);
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title-upp {
+  text-transform: uppercase;
+}
+
+/*--header--*/
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+.header .site-nav a {
+  color: var(--primary-text-color);
+}
+
+.header .address a {
+  color: var(--grey-text-color);
+  font-style: normal;
+}
+
+.header .link:hover,
+.header .link:focus,
+.header .link:active {
+  color: var(--hover-text-color);
+  cursor: pointer;
+}
+/*--/header--*/
+
+/*--main section--*/
+
+.main-section {
+  color: var(--light-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.main-section-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.main-srction-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
+  background-color: var(--hover-text-color);
+}
+
+/*--/main section--*/
+/*--competences section--*/
+
+.competences h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.competences p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-color);
+}
+
+/*--/competences section--*/
+/*--what we do section--*/
+.business .title,
+.team .title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+/*--/what we do section--*/
+/*--our team section--*/
+
+.team {
+  background-color: var(--secondry-background-color);
+}
+
+.team figure {
+  background-color: var(--light-text-color);
+}
+
+.team .title-img {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team .caption {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-color);
+}
+
+/*--our team section--*/
+/*--footer--*/
+
+.footer {
+  background-color: var(--primary-background-color);
+}
+
+.footer .address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+  font-style: normal;
+}
+
+.footer .address a {
+  color: var(--light-footer-text-color);
+}
+/*--/footer--*/
+/*--portfolio section--*/
+
+/*--button container--*/
+
+.buttons .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--secondry-background-color);
+}
+
+.buttons .button:hover,
+.buttons .button:focus,
+.buttons .button:active {
+  background-color: var(--hover-text-color);
+  color: var(--light-text-color);
+  cursor: pointer;
+}
+
+/*--/button container--*/
+/*--projects container--*/
+
+.projects a {
+  color: var(--primary-text-color);
+}
+
+.projects figure {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.projects figcaption > h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects figcaption > p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-color);
+}
+
+/*--/projects container--*/
+/*--/portfolio section--*/
