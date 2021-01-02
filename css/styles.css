@@ -16,8 +16,9 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--light-text-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -39,7 +40,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  font-style: normal;
 }
 
 .header-site-nav .link {
@@ -64,20 +64,19 @@ body {
 .main-section {
   color: var(--light-text-color);
   background-color: var(--primary-background-color);
+  letter-spacing: 0.06em;
 }
 
 .main-section-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
 }
 
 .main-section-link {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--light-text-color);
   background-color: var(--hover-text-color);
 }
@@ -89,14 +88,12 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
 }
 
 .competences-text {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
 
@@ -107,7 +104,6 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
 }
 
 /*--/what we do section--*/
@@ -125,14 +121,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .team-caption {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
 
@@ -147,7 +141,6 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--light-text-color);
   font-style: normal;
 }
@@ -164,7 +157,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--secondry-background-color);
 }
@@ -192,7 +184,6 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
 
