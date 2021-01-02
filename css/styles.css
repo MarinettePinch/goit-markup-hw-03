@@ -187,14 +187,14 @@ body {
 .projects figure {
 }
 
-.projects figcaption > h3 {
+.projects h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.projects figcaption > .text {
+.projects .caption {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
