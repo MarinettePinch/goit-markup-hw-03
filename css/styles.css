@@ -22,15 +22,10 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   letter-spacing: 0.03em;
-  /*
-  padding-left: 215px;
-  padding-right: 215px;
-  */
 }
 
 .list {
   list-style-type: none;
-  margin-left: 30px;
 }
 
 .link {
@@ -48,29 +43,48 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
+  padding: 32px 215px;
 }
 
+.header,
 .header-site-nav,
 .header-site-nav-items,
 .header-site-nav-address,
 .competences-items,
 .business-items,
 .team-items,
-.display-buttons,
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.competences,
+.business,
+.team,
+.display {
+  padding: 0 215px 94px;
+}
+
+.header-site-nav > .link {
+  margin-right: 93px;
 }
 
 .header-site-nav .link {
   color: var(--primary-text-color);
 }
 
+.header-site-nav-items .list:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-address .link {
   color: var(--grey-text-color);
   font-style: normal;
+}
+
+.header-site-nav-address .list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header .link:hover,
@@ -117,13 +131,13 @@ body {
 /*--competences section--*/
 .competences-list {
   width: 270px;
-  margin-left: 30px;
 }
 
 .competences-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  padding-bottom: 10px;
 }
 
 .competences-text {
@@ -141,6 +155,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 /*--/what we do section--*/
@@ -148,6 +163,7 @@ body {
 
 .team {
   background-color: var(--secondry-background-color);
+  padding-top: 94px;
 }
 
 .team-item {
@@ -155,13 +171,17 @@ body {
   text-align: center;
 }
 
-.team-names {
+.team-caption {
+  padding: 30px 0;
+}
+.team-caption-names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  padding-bottom: 10px;
 }
 
-.team-caption {
+.team-caption-position {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -173,6 +193,7 @@ body {
 
 .footer {
   background-color: var(--primary-background-color);
+  padding: 60px 215px;
 }
 
 .footer-address {
@@ -181,15 +202,27 @@ body {
   line-height: 1.71;
   color: var(--light-text-color);
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-address .link {
   color: var(--light-footer-text-color);
+  margin-top: 9px;
 }
 /*--/footer--*/
-/*--portfolio section--*/
+/*--display section--*/
+
+.display {
+}
 
 /*--button container--*/
+
+.display-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 94px 215px 50px;
+}
 
 .display-button {
   font-weight: 500;
@@ -199,6 +232,8 @@ body {
   background-color: var(--secondry-background-color);
   border: 0px;
   border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 
 .display-button:hover,
@@ -212,15 +247,20 @@ body {
 /*--/button container--*/
 /*--projects container--*/
 
-.projects-title {
+.projects-caption {
+  padding: 20px 24px;
+}
+
+.projects-caption-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
-.projects-caption {
+.projects-caption-clip {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
