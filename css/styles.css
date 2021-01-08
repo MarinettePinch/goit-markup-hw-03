@@ -22,6 +22,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .list {
@@ -35,7 +36,10 @@ body {
 .title-upp {
   text-transform: uppercase;
 }
-
+.container {
+  width: 1600px;
+  margin: auto;
+}
 /*--header--*/
 
 .header {
@@ -56,7 +60,14 @@ body {
 .projects {
   display: flex;
   flex-wrap: wrap;
+}
+
+.header,
+.header-site-nav,
+.header-site-nav-items,
+.header-site-nav-address {
   justify-content: space-between;
+  align-items: center;
 }
 
 .competences,
@@ -102,7 +113,7 @@ body {
   background-color: var(--primary-background-color);
   letter-spacing: 0.06em;
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 349px;
   margin-bottom: 94px;
 }
 
@@ -131,13 +142,17 @@ body {
 /*--competences section--*/
 .competences-list {
   width: 270px;
+  min-height: 101px;
+}
+.competences-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .competences-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .competences-text {
@@ -155,7 +170,15 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.business-list {
+  width: 370px;
+  min-height: 294px;
+}
+
+.business-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*--/what we do section--*/
@@ -169,6 +192,17 @@ body {
 .team-item {
   background-color: var(--light-text-color);
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  border: var(--border-color) solid 1px;
+}
+
+.team-list {
+  width: 270px;
+  min-height: 368px;
+}
+
+.team-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-caption {
@@ -178,7 +212,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-caption-position {
@@ -221,7 +255,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 94px 215px 50px;
+  margin: 94px 215px 50px;
 }
 
 .display-button {
@@ -247,8 +281,22 @@ body {
 /*--/button container--*/
 /*--projects container--*/
 
+.projects-list {
+  border: 1px solid var(--border-color);
+  width: 370px;
+  min-height: 404px;
+}
+
+.projects-list:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-list:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 .projects-caption {
-  padding: 20px 24px;
+  margin: 20px 24px;
 }
 
 .projects-caption-title {
