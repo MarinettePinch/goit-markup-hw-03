@@ -105,6 +105,10 @@ body {
   color: var(--hover-text-color);
   cursor: pointer;
 }
+
+.header-site-nav .link.current {
+  color: var(--hover-text-color);
+}
 /*--/header--*/
 
 /*--main section--*/
